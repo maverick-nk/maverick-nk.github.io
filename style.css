@@ -93,7 +93,7 @@ body {
 .main {
     flex: 70%;
     /* Set the width of the main content */
-    background-color: white;
+    background-color: #fdfdfd;
     /* White background color */
     padding: 20px;
     /* Some padding */
@@ -104,13 +104,13 @@ body {
 }
 
 .main a:link {
-    color: grey;
+    color: #4d4d4d;
     background-color: transparent;
     text-decoration: none;
 }
 
 .main a:visited {
-    color: grey;
+    color: #4d4d4d;
     background-color: transparent;
     text-decoration: none;
 }
@@ -121,11 +121,21 @@ body {
     text-decoration: underline;
 }
 
+main a:active {
+    color: #4d4d4d;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .university {
     text-indent: 20px;
 }
 
 .university p {
+    text-indent: 40px;
+}
+
+.university h4 {
     text-indent: 40px;
 }
 
@@ -173,6 +183,10 @@ li span {
     .row {
         flex-direction: column;
     }
+
+    .footer {
+        flex-direction: column;
+    }
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -185,9 +199,46 @@ li span {
 
 .footer {
     padding: 20px;
-    /* Some padding */
-    text-align: center;
-    /* Center text*/
+    text-align: left;
     background: #ddd;
-    /* Grey background */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about {
+    flex: 50%;
+    padding: 20px;
+    text-align: justify;
+    color: #333;
+}
+
+.about p a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.about p a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.contact {
+    flex: 50%;
+    padding: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: #4d4d4d;
+    border-radius: 100px;
+    color: #ddd;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+    text-decoration: none;
 }
