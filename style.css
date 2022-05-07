@@ -103,6 +103,24 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.main a:link {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.main a:visited {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.main a:hover {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 .university {
     text-indent: 20px;
 }
@@ -148,6 +166,7 @@ li span {
     object-fit: contain;
     border-radius: 50%;
 }
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
