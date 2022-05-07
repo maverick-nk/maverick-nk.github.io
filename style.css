@@ -116,7 +116,7 @@ body {
 }
 
 .main a:hover {
-    color: purple;
+    color: #333;
     background-color: transparent;
     text-decoration: underline;
 }
