@@ -4,7 +4,7 @@ body {
 
 /* Style the header */
 .header {
-    padding: 70px;
+    padding: 50px;
     text-align: center;
     background: #535252;
     color: white;
@@ -19,6 +19,12 @@ body {
 .header h2 {
     font-size: 30px;
     font-family: sans-serif;
+}
+
+.last_updated {
+    text-align: left;
+    margin-bottom: -40px;
+    font-size: x-small;
 }
 
 /* Style the top navigation bar */
@@ -48,7 +54,7 @@ body {
 /* Left-aligned link */
 .navbar a.left {
     float: left;
-    /* Float a link to the right */
+    /* Float a link to the left */
 }
 
 .navbar a img.icons {
@@ -237,8 +243,9 @@ li span {
     border-radius: 100px;
     color: #ddd;
     line-height: 0;
-    margin: 0.6em 0;
+    margin: 10px;
     font-size: 1rem;
     padding: 0 1.3em;
     text-decoration: none;
+    float: left;
 }
