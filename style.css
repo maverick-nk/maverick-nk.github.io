@@ -99,6 +99,45 @@ body {
     /* Some padding */
 }
 
+.main h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.university {
+    text-indent: 20px;
+}
+
+.university p {
+    text-indent: 40px;
+}
+
+.float-right {
+    float: right;
+}
+
+.company {
+    text-indent: 20px;
+}
+
+.company h4 {
+    text-indent: 40px;
+}
+
+.company ul {
+    padding-left: 70px;
+}
+
+
+li span {
+    position: relative;
+    left: -20px;
+}
+
+.company li {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /* Profile pic */
 .profileimg {
     display: block;
