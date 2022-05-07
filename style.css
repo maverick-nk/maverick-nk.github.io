@@ -12,7 +12,7 @@ body {
 
 /* Increase the font size of the h1 element */
 .header h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Times New Roman';
 }
 
@@ -24,6 +24,7 @@ body {
 .last_updated {
     text-align: left;
     margin-bottom: -40px;
+    margin-left: -20px;
     font-size: x-small;
 }
 
@@ -93,6 +94,11 @@ body {
     /* Grey background color */
     padding: 20px;
     /* Some padding */
+}
+
+.side p {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Main column */
@@ -246,6 +252,23 @@ li span {
     margin: 10px;
     font-size: 1rem;
     padding: 0 1.3em;
+    text-decoration: none;
+    float: left;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    max-width: max-content;
+    background-color: #4d4d4d;
+    border-radius: 100px;
+    color: ivory;
+    line-height: 0;
+    margin: 5px;
+    font-size: 1rem;
+    padding: 0.8em 0.8em;
     text-decoration: none;
     float: left;
 }
