@@ -103,6 +103,38 @@ h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.side a:link {
+    color: #4d4d4d;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.side a:visited {
+    color: #4d4d4d;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.side a:hover {
+    color: #333;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.side a:active {
+    color: #4d4d4d;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#compress {
+    display: none;
+}
+
+#toggleButton {
+    font-weight: bold;
+}
+
 /* Main column */
 .main {
     flex: 70%;

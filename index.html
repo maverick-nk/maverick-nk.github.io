@@ -15,6 +15,7 @@
     <!-- Inserting external style sheet. -->
   </head>
   <body>
+    <script type="text/javascript" src="script.js"></script>
     <div class="header">
       <h2>Hello!! I'm</h2>
       <h1>Niranjan Kumawat</h1>
@@ -24,7 +25,7 @@
         <i>
           Last updated :
           <script>
-            document.write(new Date().toString());
+            document.write(getDateTime()); // Invoking the current time function defined in JS.
           </script>
         </i>
       </p>
@@ -54,14 +55,17 @@
           problems. During my past industry experience, I've collaborated with
           multiple overseas teams on exciting projects. I believe in continuous
           learning and have been working on my technical and non-technical
-          skills.
-        </p>
-        <p>
-          In my free time, I enjoy hanging out with my friends, put my camera
-          skills to action. I, occasionally, play outdoor games like basketball,
-          football, and squash. Apart from these, I consider myself a theatre
-          enthusiast and was involved in multiple theatrical plays during my
-          undergraduate studies.
+          skills.<span id="expand"></span>
+          <span id="compress"
+            ><br />
+            In my free time, I enjoy hanging out with my friends, put my camera
+            skills to action. I, occasionally, play outdoor games like
+            basketball, football, and squash. Apart from these, I consider
+            myself a theatre enthusiast and was involved in multiple theatrical
+            plays during my undergraduate studies. </span
+          ><a href="javascript:textExpandCompress()" id="toggleButton">
+            More...
+          </a>
         </p>
         <h3>Interests</h3>
         <div class="block-display">
@@ -157,7 +161,8 @@
             </li>
             <li>
               <span>
-                Developed an algorithm to integrate 3rd-party solution on an
+                Developed an algorithm to integrate 3<sup>rd</sup>-party
+                solution on an
                 <i>event-driven serverless architecture</i> facilitating
                 occasional syncs between servers.
               </span>
