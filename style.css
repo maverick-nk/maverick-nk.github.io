@@ -21,7 +21,7 @@ body {
     font-family: sans-serif;
 }
 
-.last_updated {
+.accessed_at {
     text-align: left;
     margin-bottom: -40px;
     margin-left: -20px;
