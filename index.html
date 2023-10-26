@@ -1,306 +1,314 @@
 <!DOCTYPE html>
 <!-- Declaration to specify the document is html5.-->
 <html lang="en">
-  <!-- html tag is the root element.-->
-  <head>
-    <title>e-Resume | Niranjan Kumawat</title>
-    <!-- title tag defines the tab name.-->
-    <link rel="icon" type="image/x-icon" href="./resources/favicon.png" />
-    <!-- The logo was made using https://logomakr.com/-->
-    <meta charset="UTF-8" />
-    <!-- Meta deta to mention charset used.-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Using viewport so that page looks appropriate irrespective of the device used.-->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Inserting external style sheet. -->
-  </head>
-  <body>
-    <script type="text/javascript" src="script.js"></script>
-    <div class="header">
-      <h2>Hello!! I'm</h2>
-      <h1>Niranjan Kumawat</h1>
-      <p>Welcome to my e-Resume.</p>
+<!-- html tag is the root element.-->
+
+<head>
+  <title>e-Resume | Niranjan Kumawat</title>
+  <!-- title tag defines the tab name.-->
+  <link rel="icon" type="image/x-icon" href="./resources/favicon.png" />
+  <!-- The logo was made using https://logomakr.com/-->
+  <meta charset="UTF-8" />
+  <!-- Meta deta to mention charset used.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Using viewport so that page looks appropriate irrespective of the device used.-->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Inserting external style sheet. -->
+</head>
+
+<body>
+  <script type="text/javascript" src="script.js"></script>
+  <div class="header">
+    <h2>Hello!! I'm</h2>
+    <h1>Niranjan Kumawat</h1>
+    <br />
+    <p class="last_updated">
+      <i>
+        Last updated :
+        <script>
+          document.write(getDateTime()); // Invoking the current time function defined in JS.
+        </script>
+      </i>
+    </p>
+  </div>
+  <div class="navbar">
+    <a href="./resources/files/Kumawat_Niranjan_Resume.pdf" download>Download PDF</a>
+    <!-- <a href="./index.html" target="_self">Projects & more</a>-->
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>About Me</h2>
       <br />
-      <p class="last_updated">
-        <i>
-          Last updated :
-          <script>
-            document.write(getDateTime()); // Invoking the current time function defined in JS.
-          </script>
-        </i>
+      <div>
+        <img class="profileimg" src="./resources/profile.jpg" alt="Profile picture" />
+      </div>
+      <br />
+      <br />
+      <p>
+        I'm a goal-driven Software Engineer with a diverse background, who is currently expanding my knowledge in
+        Software Engineering at Carnegie Mellon University. My background revolves around collaborating on large-scale
+        distributed systems. I was engaged with Samsung's advertising platform, concentrating predominantly on its
+        backend and infrastructure. Moreover, I possess a keen curiosity about machine learning and have engaged in
+        independent projects encompassing tasks such as digit detection, recommendation systems, and language
+        identification in the past.
+        <span id="expand"></span>
+        <span id="compress"><br />
+          In my free time, I enjoy hanging out with my friends, put my camera
+          skills to action. I prefer playing outdoor games like
+          basketball, football, and squash. Apart from these, I consider
+          myself a theatre enthusiast and was also involved in multiple
+          theatrical plays during my undergraduate studies.
+        </span>
+        <a href="javascript:textExpandCompress()" id="toggleButton">
+          More...
+        </a>
+      </p>
+      <h3>Interests</h3>
+      <div class="block-display">
+        <span class="tag">Large-Scale Distributed Systems</span>
+        <span class="tag">Back-end Development</span>
+        <span class="tag">Real-time Systems</span>
+        <span class="tag">Cloud Technologies</span>
+        <span class="tag">Software Engineering</span>
+        <span class="tag">DSA</span>
+        <span class="tag">Machine Learning</span>
+      </div>
+      <h3>Technical Skills</h3>
+      <div>
+        <span class="tag">C++</span>
+        <span class="tag">Java</span>
+        <span class="tag">Python</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Scala</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">pyspark</span>
+        <span class="tag">Kafka</span>
+        <span class="tag">Samza</span>
+        <span class="tag">Databricks</span>
+        <span class="tag">Swagger</span>
+        <span class="tag">Vert.x</span>
+        <span class="tag">Mockito/PowerMockito</span>
+        <span class="tag">pytest</span>
+        <span class="tag">Apache Log4j2</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Git</span>
+        <span class="tag">Jenkins</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Terraform</span>
+        <span class="tag">Kubernetes</span>
+        <span class="tag">AWS</span>
+        <span class="tag">Azure</span>
+        <span class="tag">GCP</span>
+        <span class="tag">Redis</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Kibana</span>
+        <span class="tag">Grafana</span>
+        <span class="tag">Jupyter</span>
+        <span class="tag">Agile(SCRUM, Kanban)</span>
+      </div>
+    </div>
+    <br />
+    <div class="main">
+      <h2>Work Experience</h2>
+      <div class="company">
+        <h3>
+          <a href="https://research.samsung.com/sri-b" target="_blank" title="Visit company website.">
+            Samsung Research & Development Institute India - Bangalore</a>
+        </h3>
+        <h4>
+          Lead Software Engineer
+          <span class="float-right">April 2022 - Present</span>
+        </h4>
+        <ul>
+          <li>
+            <span>
+              Led backend infrastructure migration for 2 AWS regions to a new cloud account with blue/green deployment
+              strategy, ensuring platform performance and stability by conducting thorough functional and stress testing
+            </span>
+          </li>
+          <li>
+            <span>
+              Collaborated with product manager to address uncertainties and edge cases while defining new feature
+              requirements
+            </span>
+          </li>
+          <li>
+            <span>
+              Streamlined client integration by developing automated integration scripts with actionable feedback
+              capabilities, cutting down overall integration effort from more than a month to a few days
+            </span>
+          </li>
+        </ul>
+        <h4>
+          Senior Software Engineer
+          <span class="float-right">April 2021 - March 2022</span>
+        </h4>
+        <ul>
+          <li>
+            <span>
+              Decreased geo information retrieval time from IPv4 by 80% through shifting remote API access to in-memory
+              access, and periodically updating records with AWS lambda; recognized with Project Incentive Award for
+              going extra mile
+            </span>
+          </li>
+          <li>
+            <span>
+              Reduced ~10% request load on primary service by designing data schema and engineering a new REST consent
+              management microservice capable of handling billions of user devices; received 2021 Samsung Excellence
+              Award
+            </span>
+          </li>
+          <li>
+            <span>
+              Improved consumer engagement, reduced ad request TAT, and increased revenue by 50% (est.) with a
+              near-optimal greedy auctioning algorithm for efficiently bundling ads in linear C-TV ad breaks; published
+              work at AdKDD'22
+            </span>
+          </li>
+          <li>
+            <span>
+              Troubleshot over 20 unreported and reported server-side issues in production using Kibana and Grafana,
+              addressing anomalous behavior, attacks, high latency, and traffic spikes to ensure platform’s expected
+              functioning
+            </span>
+          </li>
+        </ul>
+        <h4>
+          Software Engineer
+          <span class="float-right">June 2019 - March 2021</span>
+        </h4>
+        <ul>
+          <li>
+            <span>
+              Optimized platform's real-time auctioning capabilities, following OpenRTB protocol, with “Programmatic
+              Waterfall” sequential technique, resulting in strategic ad request serving and nearly 25% revenue boost
+            </span>
+          </li>
+          <li>
+            <span>
+              Enhanced platform visibility by incorporating server-side logging capabilities through Apache Log4j2
+              logging framework combined with td-agent, facilitating reporting and production debugging needs of
+              advertising business
+            </span>
+          </li>
+          <li>
+            <span>
+              Improved Very Short Ad Title's language identification accuracy for 8 languages from 85% to 91% by
+              implementing bi-LSTM RNN architecture, enhancing automatic ad filtering service's dependability
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- Education details.-->
+      <h2>Education</h2>
+      <div class="university">
+        <h3>
+          <a href="https://www.cmu.edu/" target="_blank" title="Visit university website.">
+            Carnegie Mellon University - School of Computer Science
+          </a><span class="float-right">Pittsburgh, PA</span>
+        </h3>
+        <h4>
+          Master of Software Engineering <span class="float-right">August 2022 - December 2023</span>
+        </h4>
+        <p><i>GPA: 3.19/4.33</i></p>
+        <p>Courses: Cloud Computing, Software Architecture, Web Application Development, Search Engines, Project
+          Management, Quality Management, Introduction to Machine Learning, Visual Learning & Recognition</p>
+      </div>
+      <div class="university">
+        <h3>
+          <a href="https://www.iitism.ac.in/iitismnew/" target="_blank" title="Visit university website.">
+            Indian Institute of Technology (Indian School of Mines) Dhanbad
+          </a><span class="float-right">Dhanbad, India</span>
+        </h3>
+        <h4>
+          Bachelor of Technology(w/ honours) in Computer Science and
+          Engineering <span class="float-right">July 2015 - May 2019</span>
+        </h4>
+        <p><i>GPA: 8.23/10</i></p>
+        <p>Courses: Data Structure, Algorithm Design & Analysis, Database Management Systems, Computer Networks,
+          Parallel and Distributed Computing</p>
+      </div>
+
+      <h2>Projects</h2>
+      <div class="company">
+        <h4>
+          Research Assistant - TEEL Lab, CMU
+          <span class="float-right">September 2023 - Present</span>
+        </h4>
+        <ul>
+          <li>
+            <span>
+              Re-designing a real-time data pipeline to increase system's scalability using Azure Event Hubs and Spark,
+              preparing it to accommodate five times larger traffic from future event logs churned by courses and
+              student activities
+            </span>
+          </li>
+        </ul>
+        <h4>
+          Studio Practicum Project w/ Giant Eagle, Inc., CMU
+          <span class="float-right">January 2023 - Present</span>
+        </h4>
+        <ul>
+          <li>
+            <span>
+              Validating and pre-processing (batch) inventory BLOB data from 8 disparate systems with Pandas library and
+              Azure ML Studio to generate 20+ features for inventory prediction engine
+            </span>
+          </li>
+          <li>
+            <span>
+              Applying requirements elicitation, architecture design, quality and risk management software engineering
+              practices in a greenfield project to minimize inventory abnormalities, streamlining development process
+              and increasing efficiency
+            </span>
+          </li>
+        </ul>
+        <h4>
+          Twitter Analytics on Cloud, Cloud Computing, CMU
+          <span class="float-right">January 2023 - April 2023</span>
+        </h4>
+        <ul>
+          <li>
+            <span>
+              Built a high-performance microservice with asynchronous framework and deployed using Kubernetes cluster on
+              AWS's EC2, capable of handling 120K+ requests w/ <4ms avg. latency within overall operational budget of
+                $1.28/hr 
+              </span>
+          </li>
+          <li>
+            <span>
+              Designed data model and implemented an efficient ETL process to load ~200 million records of Twitter
+              dataset into relational database with Databricks, optimizing processing time (~30 minutes), cost, and IOPS
+              performance
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="about">
+      <h2>About the website</h2>
+      <p>
+        This website is a product of my learnings towards understanding the
+        fundamentals of front-end development. The learnings on HTML and CSS
+        from
+        <a href="https://www.w3schools.com/" target="_blank"><b>W3Schools</b></a>
+        majorly contributed towards the development of the e-Resume. Thank
+        you!!
       </p>
     </div>
-    <div class="navbar">
-      <a href="./resources/files/NiranjanKumawat_CV.pdf" download
-        >Download PDF</a
-      >
-      <!-- <a href="./index.html" target="_self">Projects & more</a>-->
+    <div class="contact">
+      <h2>Contact</h2>
+      <a href="mailto:niranjankumawat152gmail.com" class="button">Gmail</a>
+      <a href="https://www.linkedin.com/in/niranjankumawat/" class="button" target="_blank">LinkedIn</a>
+      <a href="https://github.com/niranjan152" class="button" target="_blank">GitHub</a>
     </div>
+  </div>
+</body>
 
-    <div class="row">
-      <div class="side">
-        <h2>About Me</h2>
-        <br />
-        <div>
-          <img
-            class="profileimg"
-            src="./resources/profile.jpg"
-            alt="Profile picture"
-          />
-        </div>
-        <br />
-        <br />
-        <p>
-          I'm a passionate software engineer who gets excited about solving
-          real-world problems and working on innovative projects. During my past
-          industry experience, I've collaborated with multiple teams on exciting
-          projects - Samsung Ads. I believe in continuous learning and
-          parallelly work on my technical and non-technical skills.
-          <span id="expand"></span>
-          <span id="compress"
-            ><br />
-            In my free time, I enjoy hanging out with my friends, put my camera
-            skills to action. I, occasionally, play outdoor games like
-            basketball, football, and squash. Apart from these, I consider
-            myself a theatre enthusiast and was also involved in multiple
-            theatrical plays during my undergraduate studies.
-          </span>
-          <a href="javascript:textExpandCompress()" id="toggleButton">
-            More...
-          </a>
-        </p>
-        <h3>Interests</h3>
-        <div class="block-display">
-          <span class="tag">Large-Scale Distributed Systems</span>
-          <span class="tag">System Design</span>
-          <span class="tag">Back-end Development</span>
-          <span class="tag">Cloud Technologies</span>
-          <span class="tag">Software Engineering</span>
-          <span class="tag">DSA</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Deep Learning</span>
-        </div>
-        <h3>Technical Skills</h3>
-        <div>
-          <span class="tag">C/C++</span>
-          <span class="tag">Java</span>
-          <span class="tag">Python</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Swagger</span>
-          <span class="tag">OOP</span>
-          <span class="tag">Vert.x</span>
-          <span class="tag">Mockito/PowerMockito</span>
-          <span class="tag">pytest</span>
-          <span class="tag">Apache Log4j2</span>
-          <span class="tag">Flask</span>
-          <span class="tag">Git</span>
-          <span class="tag">Jenkins</span>
-          <span class="tag">JIRA</span>
-          <span class="tag">AWS - EC2, LB, S3, Lambda, KMS, RDS, Redis</span>
-        </div>
-      </div>
-      <br />
-      <div class="main">
-        <h2>Work Experience</h2>
-        <div class="company">
-          <h3>
-            <a
-              href="https://research.samsung.com/sri-b"
-              target="_blank"
-              title="Visit company website."
-            >
-              Samsung Research & Development Institute India - Bangalore</a
-            >
-          </h3>
-          <h4>
-            Lead Software Engineer |
-            <a href="https://adgear.com/en/" target="_blank">
-              Samsung Ads (Product & Engineering)
-            </a>
-            <span class="float-right">April 2022 - Present</span>
-          </h4>
-          <ul>
-            <li>
-              <span>
-                Drive design and development discussions on technical
-                requirements.
-              </span>
-            </li>
-          </ul>
-          <h4>
-            Senior Software Engineer |
-            <a href="https://adgear.com/en/" target="_blank">
-              Samsung Ads (Product & Engineering)
-            </a>
-            <span class="float-right">April 2021 - March 2022</span>
-          </h4>
-          <ul>
-            <li>
-              <span>
-                Mentored new recruits to enhance their understanding of the
-                platform.
-              </span>
-            </li>
-            <li>
-              <span>
-                Designed and drove <b>small-scale feature development</b> for
-                the platform.
-              </span>
-            </li>
-            <li>
-              <span>
-                Configured AWS services to support dev and stage environment's
-                infrastructure requirements.
-              </span>
-            </li>
-            <li>
-              <span>
-                Troubleshoot un/reported server-side issues: server's latency &
-                throughput, anomalous logging behavior, etc.
-              </span>
-            </li>
-            <li>
-              <span>
-                Developed an
-                <b>
-                  algorithm to integrate a 3<sup>rd</sup>-party solution on an
-                  event-driven serverless architecture
-                </b>
-                facilitating occasional syncs between servers.
-              </span>
-            </li>
-            <li>
-              <span>
-                Collaborated in designing and developing multiple
-                <b>privacy frameworks (Samsung consent, TCF-GDPR, Coppa)</b> to
-                provide personalized ads experience to <b>billions</b> of users.
-                Responsibility included requirements gathering, system
-                designing, implementing REST-based web service, and end-to-end
-                testing.
-              </span>
-            </li>
-            <li>
-              <span>
-                Co-authored a research paper: "Programmatic optimization of ad
-                pods for maximizing consumer engagement and revenue."
-                <i>(In Progress)</i>
-              </span>
-            </li>
-          </ul>
-          <h4>
-            Software Engineer |
-            <a href="https://adgear.com/en/" target="_blank">
-              Samsung Ads (Product & Engineering)
-            </a>
-            <span class="float-right">June 2019 - March 2021</span>
-          </h4>
-          <ul>
-            <li>
-              <span>
-                Contributed to sprint planning and followed Agile practices for
-                feature developments.
-              </span>
-            </li>
-            <li>
-              <span>
-                Collaborated in designing and developing the Waterfall Model<a
-                  href="https://www.applovin.com/glossary/waterfall/"
-                  target="_blank"
-                  class="external"
-                ></a>
-                for the platform. Further,
-                <b> developed an efficient heuristic auctioning algorithm </b>
-                for Ad Podding<a
-                  href="https://www.spotx.tv/resources/blog/product-pulse/what-is-podding/"
-                  target="_blank"
-                  class="external"
-                ></a>
-                to enhance revenue and consumer engagement in the OpenRTB setup.
-              </span>
-            </li>
-            <li>
-              <span>
-                Contributed to
-                <i>Samsung Ad's Supply Side Platform</i> reliability by ensuring
-                sufficient test case coverage and overall server performance.
-              </span>
-            </li>
-            <li>
-              <span>
-                Supported QA testing with stage deployment, understanding
-                features, and timely bug resolution.
-              </span>
-            </li>
-            <li>
-              <span>
-                Collaborated in designing and developing
-                <b>logging utilities</b> -
-                <i>
-                  considering business reporting, and production debugging
-                  requirements
-                </i>
-                - for server-side logging using Apache Log4j 2.
-              </span>
-            </li>
-            <li>
-              <span>
-                Researched and experimented with language identification models
-                and developed an <b>LSTM-RNN</b> solution for identifying very
-                short ad titles. Proposed solution
-                <b>performed 6% better on Cohen's Kappa metric.</b>
-              </span>
-            </li>
-          </ul>
-        </div>
-        <!-- Academic details.-->
-        <h2>Academic Details</h2>
-        <div class="university">
-          <h3>
-            <a
-              href="https://www.iitism.ac.in/iitismnew/"
-              target="_blank"
-              title="Visit university website."
-            >
-              Indian Institute of Technology (Indian School of Mines) Dhanbad
-            </a>
-          </h3>
-          <h4>
-            Bachelor of Technology(w/ honours) in Computer Science and
-            Engineering <span class="float-right">July 2015 - May 2019</span>
-          </h4>
-          <p><i>CGPA: 8.23 (Out of 10)</i></p>
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="about">
-        <h2>About the website</h2>
-        <p>
-          This website is a product of my learnings towards understanding the
-          fundamentals of front-end development. The learnings on HTML and CSS
-          from
-          <a href="https://www.w3schools.com/" target="_blank"
-            ><b>W3Schools</b></a
-          >
-          majorly contributed towards the development of the e-Resume. Thank
-          you!!
-        </p>
-      </div>
-      <div class="contact">
-        <h2>Contact Me</h2>
-        <a href="mailto:niranjankumawat152gmail.com" class="button">Gmail</a>
-        <a
-          href="https://www.linkedin.com/in/niranjan-kumawat-b48643102/"
-          class="button"
-          target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/niranjan152" class="button" target="_blank"
-          >GitHub</a
-        >
-      </div>
-    </div>
-  </body>
 </html>
